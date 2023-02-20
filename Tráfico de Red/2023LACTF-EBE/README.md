@@ -7,7 +7,7 @@ Traducción: "Estaba tratando de enviar una bandera a mi amigo a través de UDP,
 
 El RFC proporcionado se conoce como "The Security Flag in the IPv4 Header" y describe una bandera de seguridad en el encabezado IPv4, que se utiliza para indicar que un paquete IP es parte de un flujo de tráfico seguro. Es un RFC que no se ha adoptado ampliamente y actualmente se considera obsoleto.
 
-Lo que hice fue buscar en cabecera IP el flag con el bit al que hace rreferencia el RFC y busqué un paquete que lo tuviera a 1 ya que en teoría, por el enunciado, ese es el tráfico que hay que descartar.
+Primero buscamos en la cabecera IP el flag con el bit al que hace rreferencia el RFC y, a continuación, buscamos un paquete que lo tenga marcado a 1 ya que en teoría, por el enunciado, ese es el tráfico que hay que descartar.
 
 [01.png]
 
