@@ -20,5 +20,5 @@ Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignor
 
 ![](03.png)
  
-## Autor: Andrés del Río.
+### Autor: Andrés del Río.
  
