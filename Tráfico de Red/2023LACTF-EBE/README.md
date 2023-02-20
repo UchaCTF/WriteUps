@@ -1,4 +1,5 @@
 # Enunciado
+*Autor:*[Andr3sdelRio](https://twitter.com/Andr3sdelRio)
 *I was trying to send a flag to my friend over UDP, one character at a time, but it got corrupted! I think someone else was messing around with me and sent extra bytes, though it seems like they actually abided by RFC 3514 for once. Can you get the flag?*
 
 **Traducción:** "Estaba tratando de enviar una bandera a mi amigo a través de UDP, un carácter a la vez, ¡pero se corrompió! Creo que alguien más estaba jugando conmigo y envió bytes adicionales, aunque parece que en realidad cumplieron con RFC 3514 por una vez. ¿Puedes conseguir la bandera?"
