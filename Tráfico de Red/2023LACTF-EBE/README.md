@@ -9,7 +9,7 @@ El RFC proporcionado se conoce como "The Security Flag in the IPv4 Header" y des
 
 Primero buscamos en la cabecera IP el flag con el bit al que hace rreferencia el RFC y, a continuación, buscamos un paquete que lo tenga marcado a 1 ya que en teoría, por el enunciado, ese es el tráfico que hay que descartar.
 
-(01.png)
+[](01.png)
 
 Una vez marcado, se puede hacer clic derecho en el campo e ir *Apply as filter->Selected*, para seleccionar el tráfico "ruidoso".
 Después iremos a *Edit-> Ignore all displayed*, para ignorar dicho tráfico. En la pantalla principal quitamos el filtro que habíamos quitado y veremos lo siguiente:
