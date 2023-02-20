@@ -3,7 +3,7 @@ I was trying to send a flag to my friend over UDP, one character at a time, but 
 
 Traducción: "Estaba tratando de enviar una bandera a mi amigo a través de UDP, un carácter a la vez, ¡pero se corrompió! Creo que alguien más estaba jugando conmigo y envió bytes adicionales, aunque parece que en realidad cumplieron con RFC 3514 por una vez. ¿Puedes conseguir la bandera?"
 
-# Resolución:
+# Resolución
 
 El RFC proporcionado se conoce como "The Security Flag in the IPv4 Header" y describe una bandera de seguridad en el encabezado IPv4, que se utiliza para indicar que un paquete IP es parte de un flujo de tráfico seguro. Es un RFC que no se ha adoptado ampliamente y actualmente se considera obsoleto.
 
