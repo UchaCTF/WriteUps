@@ -20,5 +20,5 @@ Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignor
 
 ![](03.png)
  
-**Autor:**[Andr3sdelRio](https://twitter.com/Andr3sdelRio) 
+**Autor:** [Andr3sdelRio](https://twitter.com/Andr3sdelRio) 
  
