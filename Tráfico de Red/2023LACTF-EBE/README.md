@@ -19,3 +19,6 @@ Después iremos a *Edit-> Ignore all displayed*, para ignorar dicho tráfico. En
 Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
 
 ![](03.png)
+ 
+##Autor: Andrés del Río.
+ 
