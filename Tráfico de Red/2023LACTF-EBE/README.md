@@ -16,6 +16,6 @@ Después iremos a Edit-> Ignore all displyed, para ignorar dicho tráfico. En la
 
 [02.png]
 
-Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a Follow -> UDP Stream:
+Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
 
 [03.png]
