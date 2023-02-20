@@ -12,7 +12,7 @@ Primero buscamos en la cabecera IP el flag con el bit al que hace referencia el 
 ![Imagen01](01.png)
 
 Una vez marcado, se puede hacer clic derecho en el campo e ir *Apply as filter->Selected*, para seleccionar el tráfico "ruidoso".
-Después iremos a *Edit-> Ignore all displayed*, para ignorar dicho tráfico. En la pantalla principal quitamos el filtro que habíamos quitado y veremos lo siguiente:
+Después iremos a *Edit-> Ignore all displayed*, para ignorar dicho tráfico. En la pantalla principal quitamos el filtro que habíamos puesto y veremos lo siguiente:
 
 ![](02.png)
 
