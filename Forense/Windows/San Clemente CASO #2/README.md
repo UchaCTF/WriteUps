@@ -5,7 +5,7 @@
 
 ### Caso #2
 
-  ![hippo](https://ctfd.iessanclemente.net/files/b4676f992bf6e0e39b40fbcbedf1ce79/mafia_color.gif)
+  ![](mafia_color.gif)
   
 ## Parte 1
 
