@@ -16,7 +16,7 @@
    
   Analizando el código vemos que si le pasamos un input de 48 caracteres sucederá un  desbordamiento del buffer.
 
-![](Bufferoverflow.png)
+![](Bufferoverflow.jpeg)
 
 
 
