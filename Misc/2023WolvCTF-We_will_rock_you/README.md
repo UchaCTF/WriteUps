@@ -9,11 +9,11 @@ Se nos proporciona un fichero zip cifrado con contraseña. Vamos a usar John The
 
 Ejecutamos zip2john para extraer el hash del archivo:
 
-'zip2john we_will_rock_you.zip > hash.txt'
+`zip2john we_will_rock_you.zip > hash.txt`
 
 Ejecutamos John the Ripper con el diccionario Rockyou.txt y el archivo hash:
 
-'john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt'
+`john --wordlist=/usr/share/wordlists/rock`ou.txt hash.txt`
 
 Y obtenemos la contraseña (michigan4ever):
 
@@ -25,3 +25,12 @@ Con la contraseña obtenida descomprimimos el zip y obtenemos el fichero flag.tx
 
  
 **Autor:** [Andr3sdelRio](https://twitter.com/Andr3sdelRio) 
+
+<pre>
+```python
+def hello_world():
+    print("Hello, World!")
+
+hello_world()
+```
+</pre>
