@@ -26,11 +26,3 @@ Con la contraseña obtenida descomprimimos el zip y obtenemos el fichero flag.tx
  
 **Autor:** [Andr3sdelRio](https://twitter.com/Andr3sdelRio) 
 
-<pre>
-```python
-def hello_world():
-    print("Hello, World!")
-
-hello_world()
-```
-</pre>
