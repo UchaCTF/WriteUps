@@ -1,4 +1,7 @@
-![Logo Ucha_CTF_Team](Logo.v2.peque.jpg)
+<p align="center">
+  <img src="Logo.v2.peque.jpg">
+</p>
+
 
 # WriteUps
 
