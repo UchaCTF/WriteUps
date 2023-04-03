@@ -12,22 +12,33 @@ Tras buscar información de cómo funciona el intercambio de información de est
 Vemos que una vez establecido el canal de comunicación comienza una “conversación” de longitudes de paquetes muy similares.
 
 ![Imagen01](01.png)
+
 En algunos de estos paquetes no se muestran datos en el campo keys.
 
 ![](02.png)
 
-Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
+Sin embargo en otros vemos que tiene contenido y que se trata de un teclado enviando pulsaciones de teclado.
 
 ![](03.png)
-Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
 
-![](03.png)
-Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
+### Paso 1
+Filtramos la captura hasta obtener aquellos campos en los que sí hay información:
 
-![](03.png)
-Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
+'((usb.transfer_type == 0x01) && (frame.len == 66) && !(usbhid.data.key.array ==  00))'
+Añadimos el campo Keys como columna para mostrar los valores:
 
-![](03.png)
-Ahora solo tenemos que hacer clic derecho en cualquiera de los paquetes no ignorados e ir a *Follow -> UDP Stream:*
+![](04.png)
 
-![](03.png)
+Dando como resultado:
+
+![](05.png)
+
+Ahora exportamos en csv:
+
+![](06.png)
+
+### Paso 2
+
+Creamos un script en Python que realice la conversión de los valores base del teclado copiando de ![aqui](https://github.com/syminical/PUK/blob/master/maps.py) el mapkey.
+
+![](07.png)
