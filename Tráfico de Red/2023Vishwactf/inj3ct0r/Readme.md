@@ -24,7 +24,8 @@ Sin embargo en otros vemos que tiene contenido y que se trata de un teclado envi
 ### Paso 1
 Filtramos la captura hasta obtener aquellos campos en los que sí hay información:
 
-'((usb.transfer_type == 0x01) && (frame.len == 66) && !(usbhid.data.key.array ==  00))'
+`((usb.transfer_type == 0x01) && (frame.len == 66) && !(usbhid.data.key.array ==  00))`
+
 Añadimos el campo Keys como columna para mostrar los valores:
 
 ![](04.png)
@@ -40,5 +41,41 @@ Ahora exportamos en csv:
 ### Paso 2
 
 Creamos un script en Python que realice la conversión de los valores base del teclado copiando de ![aqui](https://github.com/syminical/PUK/blob/master/maps.py) el mapkey.
+```
+import csv
+base_keys = {
+  # meta
+  '00' : '', # none
+  '01' : 'error_ovf',
+  # letters
+  '04' : 'a',
+  '05' : 'b',
+  '06' : 'c',
+  '07' : 'd',
+  '08' : 'e',
+  '09' : 'f', ##diccionario acortado
+  'f6' : 'KEY_MEDIA_SCROLLDOWN',
+  'f7' : 'KEY_MEDIA_EDIT',
+  'f8' : 'KEY_MEDIA_SLEEP',
+  'f9' : 'KEY_MEDIA_COFFEE',
+  'fa' : 'KEY_MEDIA_REFRESH',
+  'fb' : 'KEY_MEDIA_CALC'
+}
+
+with open('parsear.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    line_count = 0
+    flag = ''
+    for row in csv_reader:
+        if line_count == 0:
+            line_count += 1
+        else:
+            print (row[9])
+            flag+=base_keys[row[9]]
+            line_count += 1
+    print(f'Processed {line_count} lines.')
+    print(flag)
+```
+### Resultado
 
 ![](07.png)
