@@ -19,7 +19,7 @@ Se nos abre una página con un login vulnerable a SQL.
     
     ``bucket{s1mp13_sq11_ed0176a}``
    
-  Investigaremos el funcionamiento de la página mirando el código fuente y usando burpsuite.
+  Inyectamos código y obtenemos la flag.
 
 
 ![](https://github.com/albertominan/WriteUps/blob/e0823ae7827c759926ee0b9c9bc524d4bf7c5b94/WEB/EBucket-2023/Capturas/2.png)
