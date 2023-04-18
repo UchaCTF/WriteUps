@@ -9,7 +9,7 @@ Abriendo el fichero con WireShark vamos a *Statistics -> Protocol Hierarchy* par
 
 ![Imagen01](01.png)
 
-Vemos que hay una comunicación HTTP. Hacemos clic en uno de los paquetes con protoclo HTTP y hacemos clic en el botón derecho Follow TCP Stream. Vamos incrementando el Stream (abajo a la derecha) y pronto encontramos lo siguiente:
+Vemos que hay una comunicación HTTP. Hacemos clic en uno de los paquetes con protoclo HTTP y hacemos clic en el botón derecho en *Follow TCP Stream*. Vamos incrementando el Stream (abajo a la derecha) y pronto encontramos lo siguiente:
 
 ![](02.png)
 
