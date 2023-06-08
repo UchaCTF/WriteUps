@@ -3,7 +3,7 @@
 
 # Resolución
 
-El fichero chall.c contien el siguiente código:
+El fichero chall.c contiene el siguiente código:
 
 ~~~
 #include <stdio.h>
