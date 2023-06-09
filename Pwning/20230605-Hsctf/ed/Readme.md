@@ -70,13 +70,13 @@ Primero, ejecutamos gdb-gef con el binario 'ed':
 
 ![](05.png)
 
-y buscamos la dirección de memoria de la función *flag()*. Lo hacemos con el comando ´print &flag´
+y buscamos la dirección de memoria de la función *flag()*. Lo hacemos con el comando `print &flag`
 
 ![](07.png)
 
 Obtenemos la dirección **0x4011d2**
 
-Ahora debemos de comprobar si el código ejecutable ha sido compilado sin alguna de las protecciones que impiden el desbordamiento de buffer. Lo hacemos con checksec:
+Ahora debemos de comprobar si el código ejecutable ha sido compilado sin alguna de las protecciones que impiden el desbordamiento de buffer. Lo hacemos con `checksec`:
 
 ![](02.png)
 
