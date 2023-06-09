@@ -105,7 +105,7 @@ Vamos a utilizar el comando 'cyclic' de 'pwntools' para generar una cadena con u
 
 Para ejecutar el programa desde dentro de gdb con el fichero de texto generado, debemos de utilizar el comando ´r< cadena.txt´, obteniendo la siguiente salida:
 
-![](06.png)
+![](09.png)
 
 En este caso nos interesa poder sobreescribir el stack pointer (registro **rsp**) que apunta a la cima de pila para ubicar en él la dirección de la función flag().
 
