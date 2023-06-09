@@ -3,7 +3,7 @@
 
 # Resolución
 
-Nos proporcionan el siguiente código:
+Nos proporcionan el siguiente código (chall.c) y su binario correspondiente (ed):
 ~~~
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,10 +63,8 @@ int main(int argc, char** argv) {
 		}
 	}
 }
-
 ~~~
-
-En el cual tenemos la fúnción int flag() que imprime la flag pero que nunca es llamada en el código, por lo que podemos tratar de obtener la dirección en la que se encuentra dicha función y modificar de alguna forma el flujo de programa para que se ejecute.
+En el mismo tenemos la fúnción int flag() que imprime la flag pero que nunca es llamada en el código, por lo que podemos tratar de obtener la dirección en la que se encuentra dicha función y modificar de alguna forma el flujo de programa para que se ejecute.
 
 Primero, ejecutamos gdb-gef con el binario 'ed':
 
@@ -86,11 +84,11 @@ Vemos que no tiene la protección *Stack Canary* ni *PIE* por lo que en principi
 
 > Un **stack canary** es un valor de seguridad colocado en la pila justo antes de la dirección de retorno en una función. Este valor se elige de forma aleatoria al inicio de la ejecución del programa y se verifica al finalizar la función antes de que se produzca el retorno. Si el valor del canary se ha modificado, se asume que ha ocurrido un desbordamiento de búfer y el programa puede tomar medidas para prevenir un posible ataque como terminar abruptamente la ejecución, generar una excepción o informar del intento de ataque.
 
-> Las **protecciones PIE** (Position Independent Executable) son técnicas de seguridad que hacen que el código y los datos de un programa se carguen en posiciones de memoria aleatorias cada vez que se ejecuta. Esto dificulta a los atacantes explotar vulnerabilidades de memoria, ya que no conocen de antemano la ubicación exacta de las estructuras de datos y funciones en el programa. Las protecciones PIE fortalecen la seguridad al hacer más difícil para los atacantes predecir y abusar de la memoria, lo que reduce la probabilidad de ataques de ejecución de código malicioso y otros tipos de ataques basados en la ubicación precisa de los elementos en memoria.
+> Las **protecciones PIE** (Position Independent Executable) son técnicas de seguridad que hacen que el código y los datos de un programa se carguen en posiciones de memoria aleatorias cada vez que se ejecuta. Esto dificulta a los atacantes explotar vulnerabilidades de memoria, ya que no conocen de antemano la ubicación exacta de las estructuras de datos y funciones en el programa. 
 
 Para conseguir el desbordamiento debemos de encontrar alguna forma de introducción de datos que permita que el programa se 'desborde'. Un desbordamiento generalmente se produce cuando un programa escribe más datos en un búfer de los que puede contener. 
 
-En el código suministrador tenemos dos líneas que posibilitan un buffer overflow debido a la discrepancia en los tamaños de los búferes y la forma en que se maneja la entrada del usuario.
+En el código suministrado tenemos dos líneas que posibilitan un buffer overflow debido a la discrepancia en los tamaños de los búferes y la forma en que se maneja la entrada del usuario.
 
 1. `char input[24];`: Aquí, se declara un array de caracteres `input` con un tamaño fijo de 24 bytes.
 
