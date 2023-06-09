@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
 	}
 }
 ~~~
-En el mismo tenemos la fúnción `int flag()` que imprime la flag pero que nunca es llamada en el código, por lo que podemos tratar de obtener la dirección en la que se encuentra dicha función y modificar de alguna forma el flujo de programa para que se ejecute.
+En el mismo, tenemos la fúnción `int flag()` que imprime la flag pero que nunca es llamada en el código, por lo que podemos tratar de obtener la dirección en la que se encuentra dicha función y modificar de alguna forma el flujo de programa para que se ejecute.
 
 Primero, ejecutamos gdb-gef con el binario 'ed':
 
