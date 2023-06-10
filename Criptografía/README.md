@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="cripto.png">
+  <img src="cript.png">
 </p>
 
 ## Criptografía
