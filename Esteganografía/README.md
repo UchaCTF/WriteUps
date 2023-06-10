@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="steg.png">
+  <img src="esteg.png">
 </p>
 
 ## Esteganografía
