@@ -4,4 +4,4 @@
 
 ## Criptografía
 
-En esta sección se encuentran los writeups relacionados con desafíos de criptografía. Aquí se exploran diferentes técnicas para descifrar y codificar mensajes cifrados.
+En esta sección se encuentran los writeups relacionados con desafíos de criptografía. Los retos de este estilo utilizan diferentes técncicas de codificación y cifrado de la información.
