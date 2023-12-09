@@ -80,6 +80,21 @@ Lo ejecutamos y podemos acceder a la flag.
 
 ![](04.png)
 
+## Nota 
+En C, hay varias funciones consideradas problemáticas o inseguras, principalmente porque no realizan comprobaciones de límites en los datos que manejan. Esto puede llevar a vulnerabilidades como desbordamientos de búfer (buffer overflows), corrupción de memoria, y otros problemas de seguridad. Algunas de estas funciones incluyen:
+
+1. **`gets()`**: Como ya se mencionó, no realiza ninguna verificación de límites en la entrada, lo que puede causar desbordamientos de búfer.
+
+2. **`strcpy()` y `strcat()`**: Estas funciones copian y concatenan cadenas respectivamente, sin verificar el tamaño del búfer de destino. Pueden causar desbordamiento de búfer si la cadena de origen es más larga que el espacio disponible en el búfer de destino.
+
+3. **`sprintf()`**: Similar a `strcpy()` y `strcat()`, `sprintf()` escribe datos formateados a una cadena sin comprobar si el búfer de destino es lo suficientemente grande para los datos, lo que puede llevar a desbordamientos de búfer.
+
+4. **`scanf()`**: Sin especificadores de anchura adecuados, `scanf()` puede escribir más datos en un búfer de lo que puede sostener, lo que lleva a un desbordamiento de búfer. Esto es especialmente problemático con el especificador de formato `%s`.
+
+5. **`strncpy()` y `strncat()`**: Aunque estas funciones están diseñadas para ser más seguras que `strcpy()` y `strcat()` al incluir un límite de tamaño, pueden ser problemáticas si no se usan correctamente. Por ejemplo, `strncpy()` no garantiza que la cadena de destino termine con un carácter nulo si el tamaño de la cadena de origen es igual o mayor que el límite de tamaño, lo que puede llevar a errores de cadenas no terminadas.
+
+6. **`memcpy()` y `memmove()`**: Estas funciones copian bloques de memoria y también pueden causar desbordamientos de búfer si el búfer de destino no es lo suficientemente grande.
+
  
 **Autor:** [Andr3sdelRio](https://twitter.com/Andr3sdelRio) 
 
