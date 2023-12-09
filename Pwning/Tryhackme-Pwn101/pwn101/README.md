@@ -2,10 +2,43 @@
 ![Imagen01](01.png)
 # Resolución
 
-Al ejecutar el binario vemos que con una entrada grande ya se desborda y nos da una shell.
+Si abrimos el ejecutable que nos dan con un compilador, por ejemplo *GHidra*, nos encontramos con el siguiente código en la función main
+
+~~~
+
+{
+  char local_48 [60];
+  int local_c;
+  
+  local_c = 0x539;
+  setup();
+  banner();
+  puts(
+      "Hello!, I am going to shopping.\nMy mom told me to buy some ingredients.\nUmmm.. But I have l ow memory capacity, So I forgot most of them.\nAnyway, she is preparing Briyani for lunch, Can  you help me to buy those items :D\n"
+      );
+  puts("Type the required ingredients to make briyani: ");
+  gets(local_48);
+  if (local_c == 0x539) {
+    puts("Nah bruh, you lied me :(\nShe did Tomato rice instead of briyani :/");
+                    /* WARNING: Subroutine does not return */
+    exit(0x539);
+  }
+  puts("Thanks, Here\'s a small gift for you <3");
+  system("/bin/sh");
+  return;
+}
+~~~
+El problema principal en este código es el uso de la función `gets()`, que es notoriamente insegura y propensa a causar vulnerabilidades de desbordamiento de búfer (buffer overflow).
+
+El código define un arreglo de caracteres `local_48` con un tamaño de 60 bytes. Luego, utiliza la función `gets()` para leer la entrada del usuario directamente en este arreglo. La función `gets()` no verifica el tamaño de la entrada, lo que significa que si un usuario ingresa más de 60 caracteres, estos datos adicionales se escribirán más allá del final del arreglo `local_48`. Esto puede sobrescribir otros datos en la pila, incluyendo el valor de la variable `local_c`, y potencialmente puede permitir la ejecución de código arbitrario o provocar un comportamiento inesperado del programa.
+
+La condición `if (local_c == 0x539)` está diseñada para verificar si `local_c` aún contiene su valor original (1337 en decimal), pero debido a la vulnerabilidad mencionada, este valor puede ser fácilmente alterado por una entrada maliciosa y hacer que el programa no entre en el bucle y pase a ejecutar `system("/bin/sh")` que nos dará un shell en el entorno de ejecución del programa.
+
+
+Al ejecutar el binario vemos que con una entrada grande ya se desborda y, efectivamente, nos da una shell.
 ![](02.png)
 
-Por lo que escribimos directamente el código con ayuda de las pwntools:
+Por lo que escribimos un código con ayuda de las pwntools para la ejecución contra el entorno remoto:
 
 ![](03.png)
 
