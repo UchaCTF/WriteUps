@@ -2,9 +2,10 @@
 ![Imagen01](01.png)
 # Resolución
 
-Si abrimos el ejecutable que nos dan con un compilador, por ejemplo *GHidra*, nos encontramos con el siguiente código en la función main
+Si utilizamos un decompilador, como *GHidra*, para examinar el ejecutable proporcionado, nos encontraremos con el siguiente código en la función principal (main):
 
 ~~~
+void main(void)
 
 {
   char local_48 [60];
