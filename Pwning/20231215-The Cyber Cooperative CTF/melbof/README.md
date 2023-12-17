@@ -46,7 +46,7 @@ Modificamos ahora el código para poder ejecutarlo contra el servicio remoto:
 
 ![](11.png)
 
-Lo ejecutamos y conseguimos la Shell:
+Lo ejecutamos y conseguimos la Shell y la flag:
 
 ![](12.png)
 
