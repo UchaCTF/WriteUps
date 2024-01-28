@@ -35,7 +35,7 @@ Al ver el resto de ficheros disponibles en `AppData` observamos que hay varios f
 
 ![](Pasted%20image%2020240128192840.png)
 
-Poniendo todo conjunto:
+Poniendo todo en conjunto:
 
 **TetCTF{172.20.25.15:4444_VBA-M4cR0_R3c0v3rry_34sy_R1ght?}**
  
