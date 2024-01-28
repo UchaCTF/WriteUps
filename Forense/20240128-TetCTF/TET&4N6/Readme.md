@@ -1,5 +1,5 @@
 # Enunciado
-![](Pasted image 20240128082010.png)
+![]('Pasted image 20240128082010.png')
 
 - Fichero: https://drive.google.com/file/d/1k3GdAxgckGB9k1nKKn8Zz7wyEb3JT1lP/view?usp=sharing
 
