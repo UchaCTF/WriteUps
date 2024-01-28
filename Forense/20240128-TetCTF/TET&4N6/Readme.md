@@ -1,5 +1,5 @@
 # Enunciado
-![Pasted image 20240128082010.png]
+![](Pasted image 20240128082010.png)
 
 - Fichero: https://drive.google.com/file/d/1k3GdAxgckGB9k1nKKn8Zz7wyEb3JT1lP/view?usp=sharing
 
@@ -8,6 +8,7 @@
 Al descomprimir el fichero proporcionado obtenemos dos archivos:
 
 ![](Pasted image 20240128160404.png)
+
 El primero es un volcado de memoria RAM que no va a ser necesario para la resolución del reto. 
 El segundo tiene extensión `.adb1`, que es el formato utilizado por AccessData Forensic Toolkit (FTK) para crear imágenes forenses de discos, por lo que trataremos de acceder a él mediante la herramienta FTK Imager. Al hacerlo obtenemos lo que parece ser un volcado del directorio `Àppdata` del usuario `Stirring`:
 
