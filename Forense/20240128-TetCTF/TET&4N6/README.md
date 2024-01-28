@@ -1,7 +1,7 @@
 # Enunciado
 
 <p align="center">
-  <img src="Pasted%20image%2020240128192732.png>
+  <img src="Pasted%20image%2020240128192732.png">
 </p>
 
 
