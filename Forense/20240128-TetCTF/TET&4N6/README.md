@@ -4,6 +4,7 @@
   <img src="Pasted%20image%2020240128192732.png>
 </p>
 
+
 - Fichero: https://drive.google.com/file/d/1k3GdAxgckGB9k1nKKn8Zz7wyEb3JT1lP/view?usp=sharing
 
 # Resolución
