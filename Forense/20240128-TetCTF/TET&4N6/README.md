@@ -1,8 +1,9 @@
 # Enunciado
 
 <p align="center">
-  <img src="Pasted%20image%2020240128192732.png">
+  <img src="Pasted%20image%2020240128192732.png" style="max-width: 25%; max-height: 25%;">
 </p>
+
 
 
 - Fichero: https://drive.google.com/file/d/1k3GdAxgckGB9k1nKKn8Zz7wyEb3JT1lP/view?usp=sharing
