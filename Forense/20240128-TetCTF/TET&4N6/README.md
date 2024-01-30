@@ -15,7 +15,7 @@ Al descomprimir el fichero proporcionado obtenemos dos archivos:
 ![](Pasted%20image%2020240128192803.png)
 
 El primero es un volcado de memoria RAM que no va a ser necesario para la resolución del reto. 
-El segundo tiene extensión `.adb1`, que es el formato utilizado por AccessData Forensic Toolkit (FTK) para crear imágenes forenses de discos, por lo que trataremos de acceder a él mediante la herramienta FTK Imager. Al hacerlo obtenemos lo que parece ser un volcado del directorio `Àppdata` del usuario `Stirring`:
+El segundo tiene extensión `.ad1`, que es el formato utilizado por AccessData Forensic Toolkit (FTK) para crear imágenes forenses de discos, por lo que trataremos de acceder a él mediante la herramienta FTK Imager. Al hacerlo obtenemos lo que parece ser un volcado del directorio `Àppdata` del usuario `Stirring`:
 
 ![](Pasted%20image%2020240128192811.png)
 
