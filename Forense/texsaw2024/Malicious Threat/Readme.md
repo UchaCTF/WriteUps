@@ -21,3 +21,5 @@ Introduciendo esa dirección en el navegador observamos que es una página exist
 Obtenemos varios archivos csv del .zip, después de buscar en ellos obtenemos finalmente la flag.
 
 ![](flag.png)
+
+Autor: [Iago López](https://github.com/IagoLB)
