@@ -13,6 +13,7 @@ A raíz de las recientes violaciones de seguridad, se ha vuelto primordial garan
 ## Resolución
 
 Buscando en el archivo logs.txt proporcionado encontramos varias peticiones, filtrando por admin obtenemos una especialmente llamativa.
+
 ![](logs.png)
 
 Introduciendo esa dirección en el navegador observamos que es una página existente en ufile
