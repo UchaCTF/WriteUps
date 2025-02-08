@@ -6,7 +6,7 @@ En este reto, nos proporcionan un archivo "abc.ad1"
 
 ![imagen](https://github.com/user-attachments/assets/dc8a70df-3f8a-4cfe-a979-7262537942df)
 
-Podemos utilizar un editor hexadecimal como xxd para inspeccionar el archivo
+Podemos utilizar un editor hexadecimal como xxd para inspeccionar el archivo (aunque yo lo he hecho en bruto)
 
 ![imagen](https://github.com/user-attachments/assets/5e6065e9-2a77-4a58-b5b8-1ccd5f9cb14d)
 
