@@ -23,7 +23,7 @@ Buscando aeropuertos en Francia, decidí probar con las principales opciones
 
 <details>
   <summary>Mostrar la flag</summary>
-BITSCTF{a_really_simple_intro_to_DFIR_12848a9e}
+TRX{lyon_saint_exupery_airport}
 </details>
 
 **Autor:** [Fernando Lorenzo](https://github.com/Fernandolv123)
